@@ -1,0 +1,17 @@
+{
+  "name": "evorhei",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mahsa kosari",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn be\" \"yarn ui\"",
+    "bootstrap": "yarn; cd be; yarn install; cd ../ui; yarn install",
+    "be": "cd be; yarn start;",
+    "ui": "cd ui; yarn start;"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "react-imask": "^6.4.2"
+  }
+}
